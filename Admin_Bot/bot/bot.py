@@ -33,7 +33,7 @@ from aiogram.filters.chat_member_updated import ChatMemberUpdatedFilter, JOIN_TR
 
 def _require_bot_token() -> str:
     token = os.getenv("BOT_TOKEN", "").strip()
-    if not token or token == "YOUR_BOT_TOKEN_HERE":
+    if not token or token == "Bot_Token=8635918990:AAGr7Wc1LAGnZcK7y-glbg12vZC9VRviHtg":
         raise RuntimeError(
             "Задайте переменную окружения BOT_TOKEN (токен от @BotFather). "
             "Пример: export BOT_TOKEN=123456:ABC..."
@@ -42,7 +42,7 @@ def _require_bot_token() -> str:
 
 
 BOT_TOKEN = _require_bot_token()
-WEBAPP_URL = os.getenv("WEBAPP_URL", "").strip()
+WEBAPP_URL = os.getenv("https://sanjisfun.github.io/Web/", "").strip()
 DATA_FILE = os.getenv("BOT_DATA_FILE", "bot_data.json")
 
 # Логирование
